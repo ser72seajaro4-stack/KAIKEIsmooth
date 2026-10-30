@@ -1,0 +1,111 @@
+URLスキーム テスト結果（PC（スマホで開いてください）・2026/10/30 16:04:37）
+UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0
+
+PayPay（paypay）: paypay://user/showcode ○ / paypay:// － / https://paypay.onelink.me/U7U6/15410d6b －
+楽天ペイ（rakutenpay）: rakutenpaysdk:// ○ / rakutenpay:// －
+d払い（dbarai）: dpayment:// ○ / dbarai:// － / dkeitaipayment:// －
+au PAY（aupay）: auwallet:// ○ / aupay:// －
+メルカリ（メルペイ）（merpay）: https://link.jp.mercari.com/70tO/on4uqvcb ○ / mercari:// － / merpay:// －
+ファミペイ（famipay）: famipay:// － / familymart:// － / familymart-app: ○
+AEON Pay（aeonpay）: aeonpay:// × / aeonwallet:// ×
+ゆうちょPay（yuchopay）: yuchopay:// ×
+J-Coin Pay（jcoinpay）: https://j-coinpay.onelink.me/yZpl/JCoinPay × / jcoinpay:// × / jcoin:// ×
+Wesmo!（wesmo）: https://wesmo-app.onelink.me/eT4U/k4g5v52y ○ / wesmo:// －
+majica（ドン・キホーテ）（majica）: https://ppih.onelink.me/ZpUt/a81d78c7 × / majica:// ×
+WAON（waon）: waon:// ×
+nanaco（nanaco）: nanaco:// ×
+楽天Edy（edy）: edy:// × / rakutenedy:// ×
+Kyash（kyash）: kyash:// ×
+バンドルカード（vandle）: https://vandle.go.link/28rYy ○ / vandle:// － / bandlecard:// －
+Paidy（paidy）: https://paidy.onelink.me/eV85/PCfooter ○ / https://paidy.onelink.me/KTFT/PCfooter － / paidy:// －
+PayPal（paypal）: paypal:// ×
+Apple Wallet（applewallet）: shoebox:// ○
+Google ウォレット（googlewallet）: googlewallet:// ×
+Suica（モバイルSuica）（suica）: mobilesuica:// × / suica:// ×
+PASMO（モバイルPASMO）（pasmo）: mobilepasmo:// × / pasmo:// ×
+モバイルICOCA（icoca）: mobileicoca:// × / icoca:// ×
+JRE POINT（jrepoint）: jrepoint:// × / jre-point:// ×
+WESTER（WESTERポイント）（wester）: wester:// ×
+TOKAI STATION POINT（tospo）: tospo:// ○ / tokaistationpoint:// －
+楽天ポイントクラブ（rpointclub）: rakutenpointclub:// × / pointclub:// ×
+dポイントクラブ（dpoint）: dpoint://top × / dpoint:// ×
+Ponta（ponta）: ponta:// × / myponta:// ×
+Vポイント（vpoint）: https://tpoint-app.onelink.me/RxPQ/vulagz8y × / tpoint:// × / vpoint:// × / tsite:// ×
+iAEON（WAON POINT）（iaeon）: iaeon:// × / myaeon:// ×
+ANAマイレージクラブ（ana）: https://ana-mileage-club.go.link/home/?adj_t=1f7gdjvi ○ / anamile:// － / ana:// －
+JAL（jal）: jalapp:// × / jal:// ×
+JALマイレージバンク（jmb）: jmb:// × / jalglobalwallet:// ×
+Coke ON（cokeon）: cokeon:// ×
+セブン‐イレブン（seven）: https://sej-app.onelink.me/UUyB/69d3ef96 ○ / sej:// － / seven-eleven:// －
+ローソン（lawson）: lawson:// ○
+ミニストップ（ministop）: https://msapp1links.ministop.co.jp/koshiki/openapp － / ministop:// ○
+NewDays（newdays）: newdays:// × / jretail:// ×
+イオンお買物（aeon）: aeonokaimono:// × / aeon:// ×
+イオンモール（aeonmall）: aeonmall:// ×
+イトーヨーカドー（itoyokado）: itoyokado:// ×
+西友（seiyu）: seiyu:// ×
+ライフ（life）: lifecorp:// × / lifeapp:// ×
+ヤオコー（yaoko）: yaoko:// ×
+マルエツ（maruetsu）: maruetsu:// ×
+マツキヨココカラ（matsukiyo）: matsukiyococokara:// × / matsukiyo:// ×
+ウエルシア（welcia）: https://m.e-welcia.com/app/applink/app.html ○ / welcia:// －
+スギ薬局（sugi）: sugitomo:// × / sugi:// ×
+ツルハドラッグ（tsuruha）: tsuruhadrug:// × / tsuruha:// ×
+ドラッグイレブン（drugeleven）: drugeleven:// ×
+ウェルネス（wellness）: wellnessdrug:// ×
+サンドラッグ（sundrug）: sundrug:// ×
+セイムス（SEIMS）（seims）: seims:// ×
+クスリのアオキ（aoki）: kusuriaoki:// ×
+クリエイトSD（createsd）: createsd:// ×
+すかいらーく（ガスト・バーミヤン等）（skylark）: skylark:// × / gusto:// ×
+マクドナルド（mcd）: mcdonaldsjp:// ○ / mcdonaldsjp://order － / https://app.mcdonalds.co.jp/mQMT/zzlvij3g?af_force_deeplink=true －
+スターバックス（starbucks）: starbucksjp:// × / starbucks:// ×
+モスバーガー（mos）: https://mosapp.go.link/5z3oU ○ / mosburger:// － / mos:// －
+ケンタッキー（kfc）: kfcjapan:// ○ / kfc:// －
+バーガーキング（burgerking）: burgerkingjapan:// × / burgerking:// ×
+ミスタードーナツ（misdo）: misdo:// × / misterdonut:// ×
+サーティワン（31Club）（br31）: thirtyoneclub:// × / br31:// ×
+コメダ珈琲店（komeda）: komeda:// ×
+ドトール（DVC）（doutor）: doutor:// × / dvc:// ×
+タリーズ（tullys）: tullys:// ×
+プロント（pronto）: pronto:// ×
+吉野家（yoshinoya）: yoshinoya:// ×
+すき家（sukiya）: sukiya:// ×
+松屋（matsuya）: matsuya:// ○ / matsuyafoods:// －
+なか卯（nakau）: nakau:// ×
+くら寿司（kura）: kurasushi:// × / kura:// ×
+スシロー（sushiro）: https://sushiro.onelink.me/16ns/54b6bfa6 × / sushiro:// ×
+はま寿司（hamazushi）: hamazushi:// ○
+かっぱ寿司（kappa）: kappasushi:// ×
+丸亀製麺（marugame）: marugame:// ×
+CoCo壱番屋（cocoichi）: cocoichi:// ×
+餃子の王将（ohsho）: ohsho:// ×
+大阪王将（osakaohsho）: osakaohsho:// ×
+大戸屋（ootoya）: ootoya:// ×
+やよい軒（yayoiken）: yayoiken:// ×
+びっくりドンキー（bikkuri）: bikkuridonkey:// ×
+ココス（cocos）: cocoweb:// × / cocos:// ×
+ほっともっと（hottomotto）: hottomotto:// ×
+シャトレーゼ（chateraise）: chateraise:// ×
+ビアードパパ（beardpapa）: beardpapa:// ×
+ユニクロ（uniqlo）: https://uniqlo.onelink.me/1199028043/fdffb72a － / uniqlo:// ○
+GU（gu）: https://gu-japan.onelink.me/8JY3/d70a43e8 ○ / osharemaker:// － / gu:// －
+無印良品（muji）: mujipassport:// ○ / muji:// －
+ニトリ（nitori）: nitori:// ×
+しまむら（shimamura）: shimamura:// ×
+ABC-MART（abcmart）: abcmart:// ×
+ロフト（loft）: loft:// ×
+ハンズ（hands）: handsclub:// × / hands:// ×
+ブックオフ（bookoff）: bookoff:// ×
+ヨドバシ（yodobashi）: yodobashi:// ○
+ビックカメラ（bic）: biccamera:// ×
+ヤマダデジタル（yamada）: ymd:// ○ / yamada:// －
+エディオン（edion）: edion:// ×
+ケーズデンキ（ksdenki）: ksdenki:// ×
+カインズ（cainz）: cainz:// ×
+コメリ（komeri）: komeri:// ×
+DCM（dcm）: dcm:// ×
+カラオケまねきねこ（manekineko）: manekineko:// ×
+ENEOS（eneos）: eneos:// ×
+出光（idemitsuアプリ）（idemitsu）: idemitsu:// ○ / shellpass:// －
+コスモ石油（cosmo）: cosmo:// × / cosmooil:// ×

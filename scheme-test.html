@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>URLスキーム テスト</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .st-wrap { max-width: 640px; margin: 0 auto; padding-block: 12px 120px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 12px; }
+  .st-head h1 { margin: 0; font-size: 20px; }
+  .st-head p { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+  .st-summary { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .st-summary span { padding: 4px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
+  .st-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+  .st-app { padding: 12px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 8px; }
+  .st-app-head { display: flex; align-items: center; gap: 10px; }
+  .st-app-name { font-weight: 700; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+  .st-level { font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+  .st-level.T { background: var(--accent-soft); color: var(--accent); }
+  .st-level.N { background: var(--expired-bg); color: var(--muted); }
+  .st-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px; align-items: center; }
+  .st-try { min-height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); text-align: left; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px; overflow-wrap: anywhere; }
+  .st-mark { width: 48px; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 18px; font-weight: 700; color: var(--muted); }
+  .st-mark[aria-pressed="true"].ok { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+  .st-mark[aria-pressed="true"].ng { background: var(--danger); border-color: var(--danger); color: #fff; }
+  .st-custom { display: flex; gap: 6px; }
+  .st-custom input { flex: 1; min-width: 0; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 16px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .st-bottom { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: flex; gap: 8px; justify-content: center; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: var(--surface); border-top: 1px solid var(--line); }
+  .st-bottom .btn { flex: 1; max-width: 300px; }
+  #st-output { width: 100%; min-height: 160px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="st-wrap">
+  <header class="st-head">
+    <h1>URLスキーム テスト</h1>
+    <p id="st-platform"></p>
+    <p>候補をタップしてアプリを開きます。目的のアプリが開いたら ○、開かない・別のアプリが開いた・ストアが開いたら × を押してください。結果はこの端末に保存されます。</p>
+  </header>
+  <div class="st-summary" id="st-summary"></div>
+  <div class="st-filters" id="st-filters"></div>
+  <div id="st-list" class="list"></div>
+  <textarea id="st-output" readonly hidden aria-label="テスト結果"></textarea>
+</div>
+
+<div class="st-bottom">
+  <button type="button" id="st-copy" class="btn btn-primary">結果をコピー</button>
+  <button type="button" id="st-clear" class="btn btn-ghost">結果を消す</button>
+</div>
+
+<div id="toast" class="toast" role="status" hidden></div>
+<div id="dialog" class="dialog-backdrop" hidden>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-text">
+    <p id="dialog-text" class="dialog-text"></p>
+    <input type="text" id="dialog-input" class="dialog-input" hidden>
+    <div id="dialog-suggest" class="chips dialog-suggest" hidden></div>
+    <div class="dialog-actions">
+      <button type="button" id="dialog-cancel" class="btn btn-ghost">キャンセル</button>
+      <button type="button" id="dialog-ok" class="btn btn-primary">OK</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/util.js"></script>
+<script src="js/presets.js"></script>
+<script src="js/scheme-test.js"></script>
+</body>
+</html>
